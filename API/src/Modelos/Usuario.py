@@ -1,5 +1,5 @@
 
-from src.database import db
+from API.src.database import db
 
 class Usuario(db.Model):
     __tablename__ = 'usuario'
