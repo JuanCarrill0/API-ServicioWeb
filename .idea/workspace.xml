@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6424d0c-83e0-4601-b829-28ee7766066b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/API-ServicioWeb.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/API-ServicioWeb.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/Modelos/Usuario.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Modelos/Usuario.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/Rutas/UsuarioCRUD.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/Rutas/UsuarioCRUD.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/API/src/database.py" beforeDir="false" afterPath="$PROJECT_DIR$/API/src/database.py" afterDir="false" />
-    </list>
+    <list default="true" id="d6424d0c-83e0-4601-b829-28ee7766066b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,7 +84,7 @@
       <option name="presentableId" value="Default" />
       <updated>1678662991512</updated>
       <workItem from="1678672969748" duration="678000" />
-      <workItem from="1678673687044" duration="583000" />
+      <workItem from="1678673687044" duration="924000" />
     </task>
     <servers />
   </component>
