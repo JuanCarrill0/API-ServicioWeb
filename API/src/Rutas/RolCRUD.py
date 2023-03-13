@@ -1,6 +1,6 @@
 from flask import Blueprint, request, jsonify
-from API.src.database import db
-from API.src.Modelos.Rol import Rol
+from src.database import db
+from src.Modelos.Rol import Rol
 
 RolCRUD = Blueprint('RolCRUD', __name__)
 

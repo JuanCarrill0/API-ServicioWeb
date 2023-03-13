@@ -1,4 +1,4 @@
-from API.src.database import db
+from src.database import db
 
 class Rol(db.Model):
     __tablename__ = 'rol'
