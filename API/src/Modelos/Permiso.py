@@ -1,4 +1,4 @@
-from src.database import db
+from src.Database.database import db
 
 class Permiso(db.Model):
     __tablename__ = 'permiso'

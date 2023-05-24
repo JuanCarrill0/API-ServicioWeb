@@ -1,5 +1,5 @@
 
-from src.database import db
+from src.Database.database import db
 
 class Usuario(db.Model):
     __tablename__ = 'usuario'

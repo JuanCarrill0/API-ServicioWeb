@@ -1,10 +1,11 @@
-
 from src.Rutas.UsuarioCRUD import UsuarioCRUD
 from src.Rutas.RolCRUD import RolCRUD
-from src.database import app
 from flask_jwt_extended import JWTManager
 from src.Rutas.PermisoCRUD import PermisoCRUD
 from src.Autenticación.Autenticacion import Autenticacion
+from flask_cors import CORS
+from src.Database.database import app
+from src.WebSockets.Socket import socketio
 
 app.register_blueprint(UsuarioCRUD)
 app.register_blueprint(RolCRUD)
@@ -14,6 +15,11 @@ app.register_blueprint(Autenticacion)
 app.config['JWT_SECRET_KEY'] = 'T4nn3R0x#' # Reemplaza con una clave secreta real
 jwt = JWTManager(app)
 
+# Habilitar CORS para el localhost
+CORS(app)
+CORS(app, resources={r"/auth/register": {"origins": "http://192.168.0.14:3000"}})
+CORS(app, resources={r"/auth/login": {"origins": "http://192.168.0.14:3000"}})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    socketio.run(app, host='192.168.0.14', port=5000)
+    print("Ejecutando")

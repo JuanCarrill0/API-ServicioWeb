@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from src.database import db
+from src.Database.database import db
 from src.Modelos.Usuario import Usuario
 
 UsuarioCRUD = Blueprint('UsuarioCRUD', __name__)
