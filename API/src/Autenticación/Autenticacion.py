@@ -20,10 +20,10 @@ def login():
     usuario = Usuario.query.filter_by(nombre=nombre).first()
 
     if not usuario or not check_password_hash(usuario.contrasena, contrasena):
-        return jsonify({'msg': 'Correo o contraseña incorrectos'}), 401
+        return jsonify({'msg': 'Usuario o contraseña incorrectos'}), 401
 
     token_de_acceso = create_access_token(identity=usuario.idusuario)
-    return jsonify({'access_token': token_de_acceso}), 200
+    return jsonify({'access_token': token_de_acceso, 'usuario':nombre, 'correo': usuario.email}), 200
 
 @Autenticacion.route('/auth/register', methods=['POST'])
 def register():
@@ -47,6 +47,6 @@ def register():
     db.session.commit()
 
     token_de_acceso = create_access_token(identity=usuario.idusuario)
-    return jsonify({'access_token': token_de_acceso}), 200
+    return jsonify({'access_token': token_de_acceso, 'usuario':nombre, 'correo':correo}), 200
 
 

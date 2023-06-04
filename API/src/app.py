@@ -17,9 +17,9 @@ jwt = JWTManager(app)
 
 # Habilitar CORS para el localhost
 CORS(app)
-CORS(app, resources={r"/auth/register": {"origins": "http://192.168.0.14:3000"}})
-CORS(app, resources={r"/auth/login": {"origins": "http://192.168.0.14:3000"}})
+CORS(app, resources={r"/auth/register": {"origins": "http://10.23.12.8:3000"}})
+CORS(app, resources={r"/auth/login": {"origins": "http://10.23.12.8:3000"}})
 
 if __name__ == '__main__':
-    socketio.run(app, host='192.168.0.14', port=5000)
+    socketio.run(app, host='10.23.12.8', port=5000)
     print("Ejecutando")
